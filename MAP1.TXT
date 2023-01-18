@@ -1,6 +1,6 @@
-HAA1    DFHMSD TYPE=&SYSPARM,                                          X
-               LANG=COBOL,                                             X
-               TIOAPFX=YES,                                            X
+HAA1    DFHMSD TYPE=&SYSPARM,                                          
+               LANG=COBOL,                                                  
+               TIOAPFX=YES,                                            
                MODE=INOUT,                                             X
                STORAGE=AUTO,                                           X
                MAPATTS=COLOR,                                          X
