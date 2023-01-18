@@ -1,0 +1,73 @@
+HAA1    DFHMSD TYPE=&SYSPARM,                                          X
+               LANG=COBOL,                                             X
+               TIOAPFX=YES,                                            X
+               MODE=INOUT,                                             X
+               STORAGE=AUTO,                                           X
+               MAPATTS=COLOR,                                          X
+               TERM=ALL
+HAA1    DFHMDI SIZE=(24,80),                                           X
+               LINE=1,                                                 X
+               COLUMN=1
+
+
+        DFHMDF POS=(1,22),                                             X
+               LENGTH=46,                                              X
+               ATTRB=(NORM,PROT),                                      X
+               COLOR=BLUE,                                             X
+               INITIAL='****///////THE WORLD HOW WE SHAPE IT//////****'
+        DFHMDF POS=(4,18),                                             X
+               LENGTH=31,                                              X
+               ATTRB=(NORM,PROT),                                      X
+               COLOR=GREEN,                                            X
+               INITIAL='SOPRASTERIA BANKING SERVICES:'
+DATE    DFHMDF POS=(04,52),                                            X
+               LENGTH=10,                                              X
+               ATTRB=(NORM,PROT),                                      X
+               COLOR=BLUE
+        DFHMDF POS=(5,18),                                             X
+               LENGTH=31,                                              X
+               ATTRB=(NORM,PROT),                                      X
+               COLOR=YELLOW,                                           X
+               INITIAL='SOPRASTERIA'
+LOGIN   DFHMDF POS=(11,23),                                            X
+               LENGTH=1,                                               X
+               ATTRB=(NORM,UNPROT,IC),                                 X
+               COLOR=GREEN,                                            X
+               INITIAL='_'
+        DFHMDF POS=(11,25),                                            X
+               LENGTH=5,                                               X
+               ATTRB=(NORM,PROT),                                      X
+               COLOR=GREEN,                                            X
+               INITIAL='LOGIN'
+NEW     DFHMDF POS=(13,23),                                            X
+               LENGTH=01,                                              X
+               ATTRB=(NORM,UNPROT),                                    X
+               COLOR=GREEN,                                            X
+               INITIAL='_'
+        DFHMDF POS=(13,26),                                            X
+               LENGTH=8,                                               X
+               ATTRB=(NORM,PROT),                                      X
+               COLOR=RED,                                              X
+               INITIAL='NEW USER'
+
+
+ERR     DFHMDF POS=(19,1),                                             X
+               LENGTH=70,                                              X
+               ATTRB=(BRT,PROT),                                       X
+               COLOR=GREEN
+
+
+
+        DFHMDF POS=(24,24),                                            X
+               LENGTH=41,                                              X
+               ATTRB=(NORM,PROT),                                      X
+               COLOR=GREEN,                                            X
+               INITIAL='****/////POWERED BY SSG GROUP////////****'
+
+DUMMY   DFHMDF POS=(24,79),                                            X
+               LENGTH=1,                                               X
+               ATTRB=(DRK,PROT,FSET),                                  X
+               INITIAL=' '
+
+        DFHMSD TYPE=FINAL
+        END
