@@ -11,6 +11,7 @@ HAA1    DFHMDI SIZE=(24,80),                                           X
 
 
         DFHMDF POS=(1,22),                                             X
+        yuvasri 
                LENGTH=46,                                              X
                ATTRB=(NORM,PROT),                                      X
                COLOR=BLUE,                                             X
